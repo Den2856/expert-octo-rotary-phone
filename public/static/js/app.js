@@ -2,7 +2,7 @@
   'use strict';
 
   const CURRENCIES = [
-    ['USD', 'Р”РѕР»Р»Р°СЂ'], ['EUR', 'Р•РІСЂРѕ'], ['GBP', 'Р¤СѓРЅС‚']
+    ['USD', 'Доллар'], ['EUR', 'Евро'], ['GBP', 'Фунт']
   ];
 
   const $ = (s, root = document) => root.querySelector(s);
