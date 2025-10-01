@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert</title>
+
+    <link rel="stylesheet" href="../public/static/css/blog.css">
+	<script src="../public/static/js/app.js" defer></script>
+
+
+</head>
+<body>
+  <div class="container">
+    <main class="card" role="region">
+      <h1>Добавить товар </h1>
+
+      <div class="grid" id="form">
+        <div class="col">
+          <label for="amount">Сумма</label>
+          <input id="amount" name="amount" type="number" inputmode="decimal" min="0" step="any" placeholder="Введите сумму" aria-describedby="amountHelp" />
+          <span id="amountHelp" class="sr-only">Введите неотрицательное число</span>
+        </div>
+        <div class="col">
+          <label for="from">магазин 1</label>
+          <select id="from" name="from" aria-label="Исходная валюта"></select>
+        </div>
+        <div class="col">
+          <label for="to">номер 1</label>
+          <select id="to" name="to" aria-label="Целевая валюта"></select>
+        </div>
+        <div class="col row" style="align-self:end">
+          <div class="grow"></div>
+          
+        </div>
+      </div>
+
+      <div class="result" id="result" role="status" aria-live="polite"></div>
+      <div class="meta">
+        <span id="rate" class="badge"></span>
+      </div>
+
+      <div class="footer">
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
